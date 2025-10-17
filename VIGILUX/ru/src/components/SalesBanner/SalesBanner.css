@@ -1,0 +1,45 @@
+.form__banner {
+  background-image: url(../../assets/images/form-banner-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 407px;
+  height: 54px;
+  margin: 0 auto 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__banner-title {
+  color: #2a2a2a;
+  padding-right: 5px;
+  letter-spacing: -0.01em;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.form__banner-lb {
+  background: linear-gradient(90deg, #ffd500 0%, #e63232 100%);
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 6px;
+}
+
+.form__banner-lb::before,
+.form__banner-lb::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../assets/images/icon4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

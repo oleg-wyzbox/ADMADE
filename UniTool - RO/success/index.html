@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ro" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rezumat</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <script>
+    const qtyText = qty => `Cantitate: ${qty} buc`;
+
+    let bonus2 = "GlimmerGaze";
+    let bonus2ID = 2463;
+    let bonus2qty = 1;
+    // bonus2price is taken from the html attribute [data-bonusprice]
+
+    // whatsapp text
+    window.WA_COPY = {
+      header: '{check} CONFIRMARE COMANDĂ {check}',
+      shipping: 'EXPEDIERE ÎN 24/48 ORE {truck} {arrow}',
+      labels: { name: 'NUME', phone: 'TELEFON', email: 'EMAIL', address: 'ADRESĂ' },
+      cta: '{info} TRIMITE ACEST MESAJ PENTRU A CONFIRMA COMANDA {point}'
+    };
+    const nameNrText = "Introduceți Numele";
+    const phoneNrText = "Introduceți corect Nr. de telefon";
+    const emailText = "Introduceți corect Email";
+    const addressText = "Introduceți adresa";
+  </script>
+
+  <div class="wrapper">
+    <main class="main">
+      <header class="header">
+        <h2 style=" color:white;font-weight:900;font-size:25px;">Success</h2>
+      </header>
+
+      <section class="section1">
+        <h1 class="section1__title"><span class="userName">%userName%</span>, Mulțumim!</h1>
+        <p class="section1__subtitle">Comanda dvs. a fost plasată și va fi procesată în curând. Vă rugăm să nu plasați o comandă dublă.</p>
+      </section>
+
+      <section class="section2 active">
+        <div class="section2__top">
+          <div class="section2__top-left">Sumar comandă</div>
+          <div class="section2__top-right">
+            <div class="section2__top-right-price"><span data-totalprice>---</span> RON</div>
+            <div class="section2__top-right-lb">Plată la livrare</div>
+          </div>
+        </div>
+        <div class="section2__info">
+          <div class="section2__info-holder">
+            <div class="section2__info-list">
+              <!-- items injected dynamically -->
+            </div>
+            <div class="section2__info-total">
+              <div class="section2__info-total-row">
+                <div class="section2__info-total-row-left">Livrare</div>
+                <div class="section2__info-total-row-right"><span data-deliveryprice>20</span> RON</div>
+              </div>
+              <div class="section2__info-total-row">
+                <div class="section2__info-total-row-left section2__info-total-row-left--1">Total</div>
+                <div class="section2__info-total-row-right section2__info-total-row-right--1"><span data-totalprice>---</span> RON</div>
+              </div>
+              <div class="section2__info-total-row">
+                <div class="section2__info-total-row-left">Metodă de plată</div>
+                <div class="section2__info-total-row-right">
+                  <div class="section2__info-total-lb">Plată la livrare</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="operator">
+        <div class="operator__img">
+          <img src="img/operator.webp" alt="operator">
+        </div>
+        <div class="operator__content">
+          <h4 class="operator__title">Operatorul nostru vă va contacta în 20 de minute. Rămâneți disponibil!</h4>
+          <div class="operator__time"><img src="img/icon-time.webp" alt="icon"><span>Program:</span><span>9:00 - 20:00</span></div>
+          <div class="operator__status">
+            <div class="operator__status">
+              <div class="operator__status-active">Acum suntem disponibili</div>
+              <div class="operator__status-not-active">Dacă nu este program de lucru, apelul va fi reprogramat pentru mâine după 9:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section3__top">
+        <div class="section3__top-head">
+          <h3 class="section3__top-head-title">Comanda nr.: <span class="order_num">#13452</span></h3>
+          <div class="section3__top-head-bottom">
+            <div class="section3__top-head-bottom-label">Livrare estimată</div>
+            <div class="section3__top-head-bottom-date" id="delivery_date">2025 - 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="title-line">Datele destinatarului</h2>
+      <section class="section3">
+        <div class="section3__info">
+          <div class="section3__info-list">
+            <div class="section3__info-list-item">
+              <img src="img/section3-icon1.svg" alt="icon" class="section3__info-list-icon">
+              <div class="section3__info-list-text" data-field-display="fullname"></div>
+            </div>
+            <div class="section3__info-list-item">
+              <img src="img/section3-icon2.svg" alt="icon" class="section3__info-list-icon">
+              <div class="section3__info-list-text" data-field-display="phone"></div>
+            </div>
+            <div style="display: none;" class="section3__info-list-item">
+              <img src="img/section3-icon_mail.svg" alt="icon" class="section3__info-list-icon">
+              <div class="section3__info-list-text" data-field-display="email"></div>
+            </div>
+            <div style="display: none;" class="section3__info-list-item">
+              <img src="img/section3-icon3.svg" alt="icon" class="section3__info-list-icon">
+              <div class="section3__info-list-text" data-field-display="address"></div>
+            </div>
+            <div style="display: none;" class="section3__info-list-item">
+              <img src="img/section3-icon4.svg" alt="icon" class="section3__info-list-icon">
+              <div class="section3__info-list-text" data-field-display="user_comment"></div>
+            </div>
+          </div>
+          <div class="btns">
+            <a href="#" data-modal="#modal-01" class="btn btn--black">Modifică datele destinatarului</a>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="title-line bonus-header" style="display: none;">Ofertă specială</h2>
+      <div class="secret-bonus"  style="display: none;">
+        <div class="secret-bonus__timer">
+          <span class="secret-bonus__timer-text">Ofertă valabilă:</span>
+          <div class="secret-bonus__timer-block">
+            <span class="secret-bonus__timer-minutes">4</span>
+            <span>min</span>
+            <span class="secret-bonus__timer-seconds">33</span>
+            <span>sec</span>
+          </div>
+        </div>
+        <h3 class="secret-bonus__title title">BONUSUL TĂU DE FRUMUSEȚE ESTE ACTIVAT!</h3>
+        <p class="secret-bonus__subtitle">Ia setul de gene magnetice <strong>GlimmerGaze cu reducere -75% și obține gene 3D dese în 60 de secunde!</strong></p>
+
+        <div class="swiper bonus__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bonus__swiper-slide">
+              <div class="bonus__swiper-slide-lb1">
+                <div class="bonus__swiper-slide-lb1-text">Reducere <span>75%</span></div>
+              </div>
+              <div class="bonus__swiper-slide-list1">
+                <div class="bonus__swiper-slide-list1-item">
+                  <img src="img/bonus-slide-icon1.svg" alt="icon">
+                  <p>Până la 60 <br> utilizări</p>
+                </div>
+                <div class="bonus__swiper-slide-list1-item">
+                  <img src="img/bonus-slide-icon2.svg" alt="icon">
+                  <p>Fixare <br> sigură</p>
+                </div>
+                <div class="bonus__swiper-slide-list1-item">
+                  <img src="img/bonus-slide-icon3.svg" alt="icon">
+                  <p>Ușor de <br> aplicat</p>
+                </div>
+              </div>
+              <img src="img/bonus-slide1.webp" alt="slide">
+            </div>
+
+            <div class="swiper-slide bonus__swiper-slide">
+              <video src="video/video.mp4" playsinline loop muted autoplay></video>
+            </div>
+
+            <div class="swiper-slide bonus__swiper-slide">
+              <img src="img/bonus-slide3.webp" alt="slide" />
+              <div class="bonus__swiper-slide-lb3">12 buc.</div>
+              <p class="bonus__swiper-slide-text3 bonus__swiper-slide-text3--1">
+                Eyeliner magnetic (4 ml)
+              </p>
+              <p class="bonus__swiper-slide-text3 bonus__swiper-slide-text3--2">
+                Cutie cu oglindă <br> pentru depozitare și <br> transport
+              </p>
+              <p class="bonus__swiper-slide-text3 bonus__swiper-slide-text3--3">
+                Pensetă‑aplicator specială <br> pentru fixarea genelor
+              </p>
+            </div>
+
+            <div class="swiper-slide bonus__swiper-slide">
+              <img src="img/bonus-slide4.webp" alt="slide" />
+              <h3 class="bonus__swiper-slide-title4">Fixare sigură</h3>
+              <p class="bonus__swiper-slide-text4">
+                10 magneți mici asigură o fixare extrem de stabilă
+              </p>
+            </div>
+
+            <div class="swiper-slide bonus__swiper-slide">
+              <img src="img/bonus-slide5.webp" alt="slide" />
+              <p class="bonus__swiper-slide-text5">
+                Eyelinerul conține particule magnetice care garantează o prindere fermă cu genele false.
+              </p>
+              <div class="bonus__swiper-slide-item5 bonus__swiper-slide-item5--1">Rezistență până la <br> 48 de ore</div>
+              <div class="bonus__swiper-slide-item5 bonus__swiper-slide-item5--2">Rezistență la apă</div>
+            </div>
+          </div>
+          <div class="bonus__swiper-button-prev"></div>
+          <div class="bonus__swiper-button-next"></div>
+        </div>
+
+        <h4 class="secret-bonus__title2 title">SET GENE MAGNETICE GLIMMERGAZE</h4>
+        <div class="swiper comment__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide comment__slide">
+              <div class="comment__slide-img">
+                <img src="img/comment1.webp" alt="comment">
+              </div>
+              <div class="comment__slide-content">
+                <h4 class="comment__slide-title">Andreea I.</h4>
+                <p class="comment__slide-text">Foarte comode și oferă un volum spectaculos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="secret-bonus__reviews"><strong>4.8 |</strong> 4132 recenzii</div>
+        <div class="secret-bonus__price">
+          <strong data-bonusprice>59.99 RON</strong>
+          <div class="secret-bonus__price-lb">-75%</div>
+          <span><s>236.99</s> RON</span>
+        </div>
+        <p class="secret-bonus__text">Setul conține tot ce ai nevoie: tuș magnetic, aplicator-pensetă și cutie compactă cu oglindă pentru un machiaj perfect chiar și în deplasare.</p>
+        <div class="secret-bonus__btns">
+          <button type="submit" class="btn btn--2" data-modal="#modal-03">
+            <strong class="btn__title">Adaugă în comandă <span>+59.99 RON</span></strong>
+            <span class="btn__subtitle">Fără cost suplimentar de livrare. Plătești la livrare</span>
+            <span class="btn__animation"></span>
+          </button>
+          <button type="submit" class="btn btn--close">
+            <img src="img/btn-close.svg" alt="icon">
+            <span>Renunță la ofertă</span>
+          </button>
+        </div>
+      </div>
+
+      <h2 class="title-line">Întrebări frecvente</h2>
+      <section class="faq">
+        <div class="faq__item">
+          <h3 class="faq__item-title">Ce urmează?</h3>
+          <div class="faq__item-list">
+            <div class="faq__item-list-item">
+              <h4 class="faq__item-list-title"><img src="img/faq-icon3.webp" alt="icon"> Comanda dvs. este în curs de procesare</h4>
+              <p>Vă vom contacta și vă vom informa despre detalii. După confirmare, produsele vor fi predate curierului pentru livrare rapidă.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__item-title">Instrucțiuni de plată</h3>
+          <div class="faq__item-list">
+            <div class="faq__item-list-item">
+              <h4 class="faq__item-list-title">💵 Plată la livrare</h4>
+              <p>Comanda dvs. a fost acceptată și va fi livrată cu plată la livrare. Veți plăti curierului în momentul livrării.</p>
+            </div>
+          </div>
+          <div class="faq__item-list">
+            <div class="faq__item-list-item">
+              <h4 class="faq__item-list-title">💳 Plată online</h4>
+              <p>După plata online reușită, veți primi o confirmare pe e-mail. Dacă apar întrebări, vă vom contacta prin e-mail sau telefon. Începem procesarea imediat și vom preda comanda curierului în cel mai scurt timp.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__item-title">Ce trebuie să știți:</h3>
+          <div class="faq__item-list">
+            <div class="faq__item-list-item">
+              <h4 class="faq__item-list-title">🇪🇺 Produsele sunt expediate din depozite din UE</h4>
+              <p>Fără taxe ascunse, rapid și sigur!</p>
+            </div>
+            <div class="faq__item-list-item">
+              <h4 class="faq__item-list-title">🌟 Garanție 100% satisfacție</h4>
+              <p>Dacă produsul nu vă place, îl puteți returna în 14 zile și vă rambursăm banii imediat!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <h3 class="footer__title">Ai nevoie de ajutor?</h3>
+        <p class="footer__text">Dacă ai întrebări sau întâmpini probleme cu o comandă existentă, contactează-ne:</p>
+        <div class="footer__link">
+          <a href="#" class="footer__link-whats-app">Contactează-ne pe WhatsApp</a>
+          <a href="mailto:info@wyzbox.com" class="footer__link-mail">
+            <span>E-mailul nostru:</span>
+            <strong>info@wyzbox.com</strong>
+          </a>
+        </div>
+        <nav class="footer__nav">
+          <a href="../billing-policy.html" target="_blank">Politica de facturare</a>
+          <a href="../privacy-policy.html" target="_blank">Politica de Confidențialitate</a>
+          <a href="../terms-of-service.html" target="_blank">Termeni <br> și condiții</a>
+          <a href="../return-policy.html" target="_blank">Politica de returnare</a>
+        </nav>
+
+        <!-- <div class="footer__bottom">
+          Expres Colet SRL, Iași, str. Aureliu Vlaicu 78 <br>
+          VAT: RO32088257 <br>
+          info@wyzbox.com
+        </div> -->
+      </footer>
+    </main>
+
+    <div id="modal-01" class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button data-close-modal class="modal__close"></button>
+          <div class="modal__top">
+            <h3 class="modal__title">Modificarea datelor destinatarului</h3>
+            <p class="modal__subtitle">După editare, apasă butonul <br> „Salvează”.</p>
+          </div>
+          <h2 class="title-line">Date de contact</h2>
+          <div class="inputs" id="contact-details">
+            <label class="input__wrap">
+              <span class="input__label">Nume și Prenume<span class="input__label-red">*</span></span>
+              <input type="text" class="input" data-field="fullname" placeholder="Introduceți numele" value="">
+            </label>
+            <label class="input__wrap">
+              <span class="input__label">Număr de telefon<span class="input__label-red">*</span></span>
+              <input type="tel" class="input" minlength="8" data-field="phone" placeholder="Introduceți Nr. de telefon" value="">
+            </label>
+            <label class="input__wrap">
+              <span class="input__label">Email</span>
+              <input type="email" class="input" data-field="email" placeholder="Adresa de email (opțional)" value="">
+            </label>
+          </div>
+
+          <div style="display: none;" class="address-block">
+            <h2 class="title-line">Adresă de livrare</h2>
+            <div class="inputs" id="address-details">
+              <label class="input__wrap">
+                <span class="input__label">Adresa<span class="input__label-red">*</span></span>
+                <input type="text" class="input" data-field="address" placeholder="Introduceți adresa" value="">
+              </label>
+            </div>
+          </div>
+
+          <div class="modal__btn-wrap">
+            <button id="details" class="btn btn--black" data-modal="#modal-05">Salvează</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-03" class="modal">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button data-close-modal class="modal__close"></button>
+          <div class="modal__top">
+            <h3 class="modal__title">Adăugați setul de gene magnetice <br> GlimmerGaze la comandă?</h3>
+          </div>
+          <div class="modal__bonus">
+            <img src="img/modal-img1.webp" alt="img">
+            <div class="modal__bonus-price">
+              <strong>55.99 RON</strong>
+              <span>236.99 RON</span>
+            </div>
+          </div>
+          <div class="modal__btn-wrap2">
+            <button class="btn btn--red upsale-yes" data-close-modal>Da, adaugă în comanda mea</button>
+            <button class="btn btn--white" data-close-modal>Nu, renunț</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-04" class="modal">
+      <div class="modal__dialog modal__dialog--380">
+        <div class="modal__content">
+          <div class="modal__icon-ok"></div>
+          <div class="modal__top modal__top--2">
+            <h3 class="modal__title">Cererea de anulare a comenzii a fost trimisă</h3>
+          </div>
+          <div data-close-modal class="modal__btn-ok">OK</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-05" class="modal">
+      <div class="modal__dialog modal__dialog--380">
+        <div class="modal__content">
+          <div class="modal__icon-ok"></div>
+          <div class="modal__top modal__top--2">
+            <h3 class="modal__title">Datele destinatarului au fost actualizate cu succes</h3>
+          </div>
+          <div data-close-modal class="modal__btn-ok">OK</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

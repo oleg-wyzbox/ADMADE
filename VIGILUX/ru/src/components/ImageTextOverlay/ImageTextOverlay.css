@@ -1,0 +1,259 @@
+.image-text-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-text-overlay.rounded-t-4xl {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.image-text-overlay__image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-text-overlay__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-text-overlay__content {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.image-text-overlay__title {
+  font-family: "Bebas Neue2", "Bebas Neue Cyrillic", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffad0d;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.image-text-overlay__title .title-yellow {
+  color: #ffad0d;
+}
+
+.image-text-overlay__title .title-white {
+  color: white;
+}
+
+.bottom-image-4-title {
+  color: #101010 !important;
+}
+
+.image-text-overlay__subtitle {
+  font-family: "Bebas Neue2", "Bebas Neue Cyrillic", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: white;
+  margin: 0;
+  margin-top: 6px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.image-text-overlay__description {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  margin-top: 14px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
+  max-width: 600px;
+  line-height: 100%;
+}
+
+.bottom-image-3-description {
+  font-weight: 400;
+}
+
+.image-text-overlay__top-arrow {
+  position: absolute;
+  top: 185px;
+  left: 206px;
+  width: 50px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-text-overlay__top-arrow img {
+  width: 50px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.image-text-overlay__bottom-arrow {
+  position: absolute;
+  top: 350px;
+  left: 285px;
+  right: 114px;
+  width: 90px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-text-overlay__bottom-arrow img {
+  width: 90px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.image-text-overlay__top-ellipse {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  width: 178px;
+  height: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-text-overlay__top-ellipse img {
+  width: 178px;
+  height: 178px;
+  object-fit: contain;
+}
+
+.image-text-overlay__bottom-ellipse {
+  position: absolute;
+  top: 410px;
+  right: 33px;
+  width: 178px;
+  height: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-text-overlay__bottom-ellipse img {
+  width: 178px;
+  height: 178px;
+  object-fit: contain;
+}
+
+.image-text-overlay__top-badge {
+  position: absolute;
+  top: 105px;
+  left: 30px;
+  width: 178px;
+  height: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.image-text-overlay__top-badge span {
+  background-color: #f8aa00;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 9px 6px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  line-height: 15px;
+  color: white;
+}
+
+.image-text-overlay__bottom-badge {
+  position: absolute;
+  top: 500px;
+  right: 33px;
+  width: 178px;
+  height: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.image-text-overlay__bottom-badge span {
+  background-color: #f8aa00;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 9px 6px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  line-height: 15px;
+  color: white;
+}
+
+/* Bottom Image 4 specific text positioning */
+.bottom-image-4 .image-text-overlay__battery-text-left {
+  position: absolute;
+  left: 24px;
+  top: 140px;
+  width: 125px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+  z-index: 10;
+}
+
+.bottom-image-4 .image-text-overlay__battery-text-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 140px;
+  width: 125px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+  z-index: 10;
+}
+
+.bottom-image-4 .image-text-overlay__battery-text-right {
+  position: absolute;
+  right: 23px;
+  top: 140px;
+  width: 125px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Font weight styling for battery text elements */
+.bottom-image-4 .image-text-overlay__battery-text-left strong,
+.bottom-image-4 .image-text-overlay__battery-text-center strong,
+.bottom-image-4 .image-text-overlay__battery-text-right strong {
+  font-weight: 700;
+}

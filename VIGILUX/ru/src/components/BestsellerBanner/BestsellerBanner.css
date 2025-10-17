@@ -1,0 +1,48 @@
+.bestseller-banner__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.bestseller-banner__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 80%;
+}
+
+.bestseller-banner__label {
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom right, #e63232 0%, #ce1321 100%);
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.bestseller-banner__header {
+  line-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+.bestseller-banner__subheader {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 200;
+  color: #000000;
+  text-align: center;
+}

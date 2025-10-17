@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ro" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>UNITOOL</title>
+  <link rel="stylesheet" href="css/popap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="lang-ro">
+
+  <script>
+    localStorage.clear();
+    const prod1 = "UNITOOL"; // Main Product name
+    const bonus1ID = 2153; // Bonus Product ID
+    const bonus1 = 'Flex Tape PVC'; // Bonus Product name
+    const bonus1qty = 1; // Bonus Product qty
+    // bonus1price is taken from the html attribute [data-bonusprice]            
+    const currency="RON"; // Currency symbol
+</script>
+
+  <div class="wrapper">
+    <main class="main">
+      <section class="section1">
+        <div class="section1__banner">
+          <img src="img/icon1.webp" alt="icon" width="13">
+          <span>LIVRARE 1–3 ZILE</span>
+          <i></i>
+          <span>PLATĂ LA LIVRARE</span>
+          <img src="img/icon2.webp" alt="icon" width="13">
+        </div>
+        <img src="img/logo.webp" width="151" alt="Unitool" class="section1__logo">
+        <div class="swiper section1__swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-1.webp" alt="slide" />
+                  </div>
+                  <div class="section1__slide-lb1"><img src="img/icon3.webp" alt="icon" width="20">Bestseller</div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <video src="video/video1.mp4" playsinline loop muted autoplay></video>
+                  </div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-3.webp" alt="slide" />
+                  </div>
+                  <div class="section1__slide-block3">
+                    <div class="section1__slide-block3-lb">Cinci sarcini</div>
+                    <div class="section1__slide-block3-text">un singur clic</div>
+                  </div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-4.webp" alt="slide" />
+                  </div>
+                  <div class="section1__slide-lb4 section1__slide-lb4--1">Dezizolare</div>
+                  <div class="section1__slide-lb4 section1__slide-lb4--2">Sertizare</div>
+                  <div class="section1__slide-lb4 section1__slide-lb4--3">Tăiere metal</div>
+                  <div class="section1__slide-lb4 section1__slide-lb4--4">Tăiere cablu</div>
+                  <div class="section1__slide-title4">TAIE • DEZIZOLEAZĂ • SERTIZEAZĂ</div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-5.webp" alt="slide" />
+                  </div>
+                  <div class="section1__slide-block5">
+                    <div class="section1__slide-block5-text">
+                      Schimbare rapidă și fixare fermă a capetelor
+                    </div>
+                    <div class="section1__slide-block5-lb">în 10 minute</div>
+                  </div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-6.webp" alt="slide" />
+                  </div>
+                  <h2 class="section1__slide-title6">
+                    Din 2018, preferat de profesioniști în electricitate, construcții și montaj
+                  </h2>
+                  <div class="section1__slide-text6 section1__slide-text6--1">unelte vândute <br> în întreaga lume</div>
+                  <div class="section1__slide-text6 section1__slide-text6--2">pe baza a <br>5 850 de recenzii</div>
+              </div>
+          </div>
+          <div class="section1__swiper-button-prev"></div>
+          <div class="section1__swiper-button-next"></div>
+        </div>
+        <div class="section1__swiper-pagination"></div>
+        <div class="section1__bottom">
+          <div class="section1__bottom-stars">Evaluare <strong>4,8</strong> pe baza a <strong><u><a href="#reviews">5 850 de recenzii</a></u></strong></div>
+          <div class="section1__bottom-title title">Clește profesional 5‑în‑1</div>
+          <div class="section1__bottom-price">
+            <strong>89 RON</strong>
+            <s>150 RON</s>
+            <div class="section1__bottom-price-lb">Reducere -40%</div>
+          </div>
+          <p class="section1__bottom-text">Singura unealtă de care vei avea vreodată nevoie</p>
+          <ul class="section1__bottom-list">
+            <li class="section1__bottom-list-item">
+              <strong>Multifuncționali</strong>: taie, dezizolează, sertizează, fixează
+            </li>
+            <li class="section1__bottom-list-item">
+              <strong>Schimbare rapidă a capetelor</strong>: un singur clic, <br>
+              și unealta este gata pentru o nouă sarcină
+            </li>
+            <li class="section1__bottom-list-item">
+              <strong>Înlocuiește 5 unelte</strong>, economisind spațiu și bani
+            </li>
+          </ul>
+        </div>
+      </section>
+      <form class="form" id="form">
+        <h3 class="title title--line"><span>Comandă mai mult – plătește mai puțin</span></h3>
+        <div class="form__banner">
+          <h4 class="form__banner-title">Reduceri <strong>fierbinți de sezon</strong></h4>
+          <div class="form__banner-lb"><span>cu reduceri de până la -50%</span></div>
+        </div>
+        <div class="form__select">
+          <div class="form__select-item active" data-qty_invoice="1" data-add_comment="x1 - 89">
+            <div class="form__select-item-top">
+              <div class="form__select-img">
+                <img src="img/select-img1.webp" alt="img">
+              </div>
+              <div class="form__select-content">
+                <h5 class="form__select-title">1 x Clește <br> UNITOOL 5‑în‑1</h5>
+                <div class="form__select-lb"><img src="img/icon5.webp" alt="icon" width="14"> Preț mic</div>
+              </div>
+              <div class="form__select-price">
+                <div class="form__select-price-top">
+                  <div class="form__select-price-top-lb">-40%</div>
+                  <div class="form__select-price-top-old">150 RON</div>
+                </div>
+                <div class="form__select-price-new"><span class="price-invoice">89</span> RON</div>
+              </div>
+            </div>
+          </div>
+          <div class="form__select-item" data-qty_invoice="2" data-add_comment="x2 - 149">
+            <div class="form__select-item-top">
+              <div class="form__select-img">
+                <img src="img/select-img2.webp" alt="img">
+              </div>
+              <div class="form__select-content">
+                <h5 class="form__select-title">2 x Clește <br> UNITOOL 5‑în‑1</h5>
+                <div class="form__select-lb form__select-lb--2"><img src="img/icon6.webp" alt="icon" width="14"> Bestseller</div>
+              </div>
+              <div class="form__select-price">
+                <div class="form__select-price-top">
+                  <div class="form__select-price-top-lb">-50%</div>
+                  <div class="form__select-price-top-old">300 RON</div>
+                </div>
+                <div class="form__select-price-new"><span class="price-invoice">149</span> RON</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="form__title2 title">Completează forma de comandă</h3>
+        <p class="form__subtitle2">un consultant te va contacta în <strong>15 minute</strong>, <br> pentru a confirma detaliile și a valida comanda</p>
+        <div class="form__time"><span>Program: 9:00–20:00</span></div>
+        <div class="form__input-block-wrap">
+          <div class="form__input-block">
+            <div class="form__input-block-icon"><img src="img/int-1.svg" alt=""></div>
+            <input type="text" name="name" placeholder="Introduceți numele" autocomplete="off" required="">
+          </div>
+          <div class="form__input-block">
+            <div class="form__input-block-icon"><img src="img/int-2.svg" alt=""></div>
+            <input type="tel" name="phone" placeholder="Introduceți Nr. de telefon" autocomplete="off" required="" inputmode="text">
+          </div>
+          <div class="form__input-block">
+            <div class="form__input-block-icon"><img src="img/int-3.svg" alt=""></div>
+                <input type="email" name="email" placeholder="Adresa de e-mail (opțional)" >
+          </div>
+        </div>
+        <button type="submit" class="btn">
+          <img src="img/btn-icon.svg" alt="icon">
+          <span>Comandă Acum</span>
+          <span class="btn__animation"></span>
+        </button>
+        <p class="btn__after-text"><span>Disponibil doar online</span> | <span>Plată la livrare</span></p>
+      </form>
+      <section class="section2">
+        <div class="faq__accordion">
+          <div class="faq__accordion-item">
+            <div class="faq__accordion-button">
+              Descriere
+              <span class="faq__accordion-button-icon"></span>
+            </div>
+            <div class="faq__accordion-content">
+              <div class="faq__accordion-content-holder">
+                <img src="img/scheme.webp" alt="scheme" style="margin-bottom: 10px;">
+                <p><strong>Clește profesional 5‑în‑1 de la UNITOOL –</strong> set compact pentru casă și auto: clește universal cu capete interschimbabile. Oferă tăiere curată, dezizolare precisă și sertizare. Realizați din oțel călit, cu mânere soft‑touch. Rezistenți la uzură, fiabili și comozi.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__accordion-item">
+            <div class="faq__accordion-button">
+              Ce conține setul
+              <span class="faq__accordion-button-icon"></span>
+            </div>
+            <div class="faq__accordion-content">
+              <div class="faq__accordion-content-holder">
+                <div class="scheme-list">
+                  <div class="scheme-list__item">
+                    <img src="img/scheme-list1.webp" alt="img">
+                    <span>Clește combinat</span>
+                  </div>
+                   <div class="scheme-list__item">
+                    <img src="img/scheme-list2.webp" alt="img">
+                    <span>Stripper <br>(pentru dezizolare)</span>
+                  </div>
+                   <div class="scheme-list__item">
+                    <img src="img/scheme-list3.webp" alt="img">
+                    <span>Foarfecă</span>
+                  </div>
+                   <div class="scheme-list__item">
+                    <img src="img/scheme-list4.webp" alt="img">
+                    <span>Sertizor  (pentru sertizare)</span>
+                  </div>
+                   <div class="scheme-list__item">
+                    <img src="img/scheme-list5.webp" alt="img">
+                    <span>Clești tăietori  laterali</span>
+                  </div>
+                   <div class="scheme-list__item">
+                    <img src="img/scheme-list6.webp" alt="img">
+                    <span>Mâner bi‑material</span>
+                  </div>
+                   <div class="scheme-list__item">
+                    <img src="img/scheme-list7.webp" alt="img">
+                    <div class="scheme-list__item-lb">
+                      <img src="img/icon7.webp" alt="icon" width="13">
+                      <span>Cadou</span>
+                    </div>
+                    <span>Carcasă din plastic   pentru   depozitare</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq__accordion-item">
+            <div class="faq__accordion-button">
+              Comandă și livrare
+              <span class="faq__accordion-button-icon"></span>
+            </div>
+            <div class="faq__accordion-content">
+              <div class="faq__accordion-content-holder">
+                <p style="margin-bottom: 14px;">Alege una dintre oferte, apoi lasă o cerere pe site. După trimiterea formularului, te va contacta un consultant pentru confirmare și finalizarea comenzii.</p>
+                <p>Livrare rapidă și sigură: curierul livrează în orice colț al României, direct la ușa ta, în 1–3 zile lucrătoare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="guarantee">
+        <div class="guarantee-img">
+          <img src="img/guarantee.webp" alt="guarantee">
+        </div>
+        <div class="guarantee-content">
+          <h4 class="guarantee-title">Garanție de retur 14 zile</h4>
+          <p class="guarantee-text">Dacă, din orice motiv, dorești să returnezi produsul în 14 zile de la cumpărare, îți rambursăm integral suma fără întrebări.</p>
+        </div>
+      </div>
+      <section class="section3">
+        <div class="section3__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-img">
+                <img src="img/section3-slide1.webp" alt="slide">
+              </div>
+              <div class="section3__slide-content">
+                <p class="section3__slide-text">L-am luat pentru mașină — m-a salvat de câteva ori pe drum. Acum stă permanent în portbagaj.</p>
+                <div class="section3__slide-name">Marin P.</div>
+              </div>
+            </div>
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-img">
+                <img src="img/section3-slide2.webp" alt="slide">
+              </div>
+              <div class="section3__slide-content">
+                <p class="section3__slide-text">Raport preț/calitate excelent: un singur set în loc de o grămadă de scule în rucsacul de lucru.</p>
+                <div class="section3__slide-name">Cristian G.</div>
+              </div>
+            </div>
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-img">
+                <img src="img/section3-slide3.webp" alt="slide">
+              </div>
+              <div class="section3__slide-content">
+                <p class="section3__slide-text">Oțelul chiar e solid, muchia e ascuțită: tăiere curată a cablului multifilar, fără „franjurare”.</p>
+                <div class="section3__slide-name">Vlad I.</div>
+              </div>
+            </div>
+          </div>
+          <div class="section3__swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="section4">
+        <div class="section4__holder">
+          <div class="section4__lb">Bestseller</div>
+          <img src="img/stars3.svg" alt="stars">
+          <h3 class="section4__title">100 000+ de bărbați din întreaga lume <br> folosesc deja UNITOOL</h3>
+          <p class="section4__subtitle">Văzut în presă</p>
+        </div>
+        <div class="section4__marquee">
+          <div class="section4__marquee-content">
+            <img src="img/marque1.webp" alt="marque" width="190">
+            <img src="img/marque2.webp" alt="marque" width="190">
+            <img src="img/marque3.webp" alt="marque" width="199">
+            <img src="img/marque4.webp" alt="marque" width="189">
+            <img src="img/marque5.webp" alt="marque" width="175">
+            <img src="img/marque1.webp" alt="marque" width="190">
+            <img src="img/marque2.webp" alt="marque" width="190">
+            <img src="img/marque3.webp" alt="marque" width="199">
+            <img src="img/marque4.webp" alt="marque" width="189">
+            <img src="img/marque5.webp" alt="marque" width="175">
+          </div>
+        </div>
+      </section>
+      <section class="section5">
+        <h2 class="section5__title title">Cinci sarcini — <span>un singur clic</span></h2>
+        <p class="section5__subtitle">Schimbă capetele pentru orice sarcină <br> în câteva secunde.</p>
+        <div class="section5__block">
+          <div class="section5__block-video">
+            <video src="video/video1.mp4" playsinline loop muted autoplay></video>
+          </div>
+          <div class="section5__block-content">
+            <h3 class="section5__block-title">Clește 5‑în‑1 <br> de la UNITOOL înseamnă...</h3>
+            <div class="section5__block-list">
+              <div class="section5__block-list-item">
+                <div class="section5__block-list-item-icon">
+                  <img src="img/section5-icon1.webp" alt="icon">
+                </div>
+                <p class="section5__block-list-item-text"><strong>Set de 5 capete interschimbabile</strong><br> pentru orice situație.</p>
+              </div>
+              <div class="section5__block-list-item">
+                <div class="section5__block-list-item-icon">
+                  <img src="img/section5-icon2.webp" alt="icon">
+                </div>
+                <p class="section5__block-list-item-text">Oțel călit cu <strong>conținut ridicat de carbon</strong>.  Duritate 60 HRC</p>
+              </div>
+              <div class="section5__block-list-item">
+                <div class="section5__block-list-item-icon">
+                  <img src="img/section5-icon3.webp" alt="icon">
+                </div>
+                <p class="section5__block-list-item-text"><strong>Mânere Ergo‑SoftGrip</strong> (soft‑touch).<br> Oferă o priză sigură, anti‑alunecare</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#form" class="btn">
+          <img src="img/btn-icon.svg" alt="icon">
+          <span>Comandă Acum</span>
+          <span class="btn__animation"></span>
+        </a>
+        <p class="btn__after-text"><span>Disponibil doar online</span> | <span>Plată la livrare</span></p>
+      </section>
+      <section class="section6">
+        <h2 class="section6__title title">
+          Gata cu folosirea <br> a 5 unelte acolo unde <br> <span>se descurcă UNA singură</span>
+        </h2>
+        <ul class="section6__list">
+          <li class="section6__list-item">
+            <img src="img/section6-img1.webp" alt="img">
+            <div class="section6__list-item-lb">pentru sarcini zilnice</div>
+          </li>
+          <li class="section6__list-item">
+            <img src="img/section6-img2.webp" alt="img">
+            <div class="section6__list-item-lb">pentru dezizolarea cablurilor</div>
+          </li>
+          <li class="section6__list-item">
+            <img src="img/section6-img3.webp" alt="img">
+            <div class="section6__list-item-lb">pentru tăierea metalului</div>
+          </li>
+          <li class="section6__list-item">
+            <img src="img/section6-img4.webp" alt="img">
+            <div class="section6__list-item-lb">pentru sertizarea conectorilor</div>
+          </li>
+          <li class="section6__list-item">
+            <img src="img/section6-img5.webp" alt="img">
+            <div class="section6__list-item-lb">tăietor pentru diverse</div>
+          </li>
+        </ul>
+      </section>
+      <section class="section7">
+        <h2 class="section7__title title">
+          Ce spun specialiștii <br>
+          <span>despre cleștii UNITOOL</span>
+        </h2>
+        <div class="section7__block">
+          <img src="img/section7-img.webp" alt="img">
+          <div class="section7__block-content">
+            <h3 class="section7__block-title">„O unealtă în care ai încredere”</h3>
+            <p class="section7__block-text">Se descurcă 100% cu majoritatea lucrărilor de cablare și montaj de prize: tai cablul, dezizolez, sertizez — capetele se schimbă instant. Înainte căram clești, tăietor, sertizor separat — acum doar UNITOOL.</p>
+          </div>
+          <div class="section7__block-bottom">
+            <div class="section7__block-name">Titu Theodorescu</div>
+            <div class="section7__block-info">Electrician (Craiova, 9 ani experiență)</div>
+          </div>
+        </div>
+        <div class="section7__lb">
+          <img src="img/section7-lb.webp" alt="lb" width="82">
+          <div class="section7__lb-content">
+            <h3 class="section7__lb-title">Alegerea profesioniștilor</h3>
+            <p class="section7__lb-text">Electricieni • montatori • constructori • mecanici • instalatori</p>
+          </div>
+        </div>
+      </section>
+      <section class="section8">
+        <h2 class="section8__title title"><span>TOP 5 motive să alegi UNITOOL</span><br> în locul cleștilor obișnuiți <br> din cel mai apropiat magazin </h2>
+        <div class="section8__block">
+          <img src="img/section8-block.webp" alt="bg" class="section8__block-img">
+          <div class="section8__block-lb">Clești <br> obișnuiți</div>
+          <div class="section8__block-lb2">5‑în‑1</div>
+          <div class="section8__block-items">
+            <div class="section8__block-item section8__block-item--1">
+              <div class="section8__block-item-text">5 capete pentru sarcini   diferite (tăiere,  dezizolare, sertizare,  prindere, răsucire)</div>
+              <div class="section8__block-item-text">Oțel 3Cr13, HRC 60 —  nu se tocește și nu  ruginește ani la rând</div>
+              <div class="section8__block-item-text">Ergo‑SoftGrip:  mânerele nu alunecă  nici cu mănuși</div>
+              <div class="section8__block-item-text">Înlocuiește  5 unelte și  economisește spațiu</div>
+              <div class="section8__block-item-text">Cutie practică  pentru depozitare</div>
+            </div>
+            <div class="section8__block-item section8__block-item--2">
+              <div class="section8__block-item-text">Doar tăiere + prindere;  pentru restul  ai nevoie de unelte  separate <br><br></div>
+              <div class="section8__block-item-text">Aliaj ieftin,  se tocește repede,  apare coroziunea</div>
+              <div class="section8__block-item-text">Metal neted/ <br> PVC ieftin — mâna  alunecă</div>
+              <div class="section8__block-item-text">Cheltuiești pe  stripper, sertizor,  chei…</div>
+              <div class="section8__block-item-text">Stau împrăștiate,  se rătăcesc ușor</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section9">
+        <div class="section9__top">
+          <h2 class="section9__title title"><span>Idee excelentă de cadou</span><br> pentru orice ocazie</h2>
+          <p class="section9__subtitle">5 funcții într-una. Ușor de transportat, <br> simplu de depozitat. Asistent universal <br> pentru fiecare zi.</p>
+        </div>
+        <div>
+          <a href="#form" class="btn">
+            <img src="img/btn-icon.svg" alt="icon">
+            <span>Comandă Acum</span>
+            <span class="btn__animation"></span>
+          </a>
+          <p class="btn__after-text"><span>Disponibil doar online</span> | <span>Plată la livrare</span></p>
+        </div>
+      </section>
+      <section class="section11" id="reviews">
+        <h2 class="section11__title title">Ce spun utilizatorii <br><span>despre cleștii UNITOOL</span></h2>
+        <div class="section11__lb">
+          <strong>4,8</strong>
+          <img src="img/stars2.svg" alt="stars">
+          <span>5 850 de recenzii</span>
+        </div>
+        <p class="section11__subtitle"><strong>98%</strong> recomandă acest produs</p>
+        <div class="section11__bars">
+          <img src="img/section11-bars.webp" alt="bars">
+        </div>
+        <div class="swiper section11__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide1.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Mi-a plăcut precizia. Stripperul nu agață firele, nici pe cablu subțire. Se simte că oțelul e călit — muchia nu se deformează după zeci de tăieturi.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Constantin Țicu</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide2.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Set „de luptă” rapid pentru montaj camere și alarme. Dezizolarea e precisă, taie cablul curat, sertizarea fără bătăi de cap. Îmi economisește timp de fiecare dată.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Ionel Munteanu</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide3.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Pentru garaj — perfect. Am strâns contacte, am sertizat papuci, am tăiat surplusul curat. Înainte aveam cinci unelte, acum un singur set cu 5 capete.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Nicu Vasile</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide4.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Chiar un ajutor universal. Am schimbat lustra și prizele într-o singură seară. Fără „unde-s tăietoarele?”, totul la îndemână. Pentru casă — must‑have, recomand.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Radu Tudor</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide5.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Raport preț/calitate excelent. La banii ăștia să ai tăiere, dezizolare și sertizare într-un singur corp — raritate. Plasticul mânerelor e plăcut, fără miros ieftin.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Sergiu Andrei</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide6.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">I-am făcut cadou tatălui de ziua lui. A spus: „O unealtă bună, nu un magnet de praf”. Îl ține în debara și, la orice mărunțiș, pe el îl ia. Set util, bine gândit.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Anatolie  Filipescu</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section11__swiper-button-prev"></div>
+          <div class="section11__swiper-button-next"></div>
+          <div class="section11__swiper-pagination"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div>
+          Expres Colet SRL, Iaşi, str. Aureliu Vlaicu 78 <br>
+          VAT: RO32088257 <br>
+          <a href="mailto:office.exprescolet@gmail.com">office.exprescolet@gmail.com</a>
+        </div>
+        <nav class="footer__nav">
+          <a href="billing-policy.html">Politica de facturare</a>
+          <a href="privacy-policy.html">Politica de Confidențialitate</a>
+          <a href="terms-of-service.html">Termeni și condiții</a>
+          <a href="return-policy.html">Politica de returnare</a>
+        </nav>
+      </footer>
+      <div class="sticky-block" style="display: flex;">
+        <div class="sticky-block__wrap">
+          <div class="sticky-block__content">
+            <div class="sticky-block__img">
+              <img src="img/sticky-block-img.webp" alt="img">
+            </div>
+            <div class="sticky-block__info">
+              <div class="sticky-block__text"><strong>Clește profesional <br> 5‑în‑1</strong></div>
+              <div class="sticky-block__price">
+                <strong>89 RON</strong>
+                <span>150 RON</span>
+              </div>
+            </div>
+          </div>
+          <a href="#form" class="btn"><span>Comandă<br> cu reducere</span></a>
+        </div>
+      </div>
+      <div class="popap">
+        <div class="popap__close"><span>Închide</span></div>
+      
+        <div class="popap-wrap">
+          <div class="popap__list">
+            <li><i class="popap-ico-1"></i><span>Comandă</span></li>
+            <li class="active"><b></b><i class="popap-ico-2"></i><span>Ofertă</span></li>
+            <li class="next-li"><i class="popap-ico-3"></i><span>Confirmare</span></li>
+          </div>
+      
+          <div class="popap__holder">
+            <!-- ===== TOP ===== -->
+            <div class="popap__top">
+              <span class="popap__sub">
+                <span class="userName">%Username%</span>, ofertă secretă!
+              </span>
+              <h3 class="popap__title">
+                Adaugă la comanda ta banda <br> pentru etanșarea fisurilor cu Reducere -75%
+              </h3>
+            </div>
+      
+            <!-- ===== SLIDER ===== -->
+            <div class="swiper main-swiper" id="main-slider1">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrap">
+                    <div class="swiper-slide__lb1">Best seller</div>
+                    <img src="img/slide5-1.webp" alt="slide">
+                  </div>
+                </div>
+      
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrap">
+                    <video src="video/video1.mp4" playsinline loop muted autoplay></video>
+                  </div>
+                </div>
+      
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrap">
+                    <img src="img/slide5-3.webp" alt="slide">
+                  </div>
+                  <div class="swiper-slide__text5-3 swiper-slide__text5-3--1">
+                    Potrivită <strong>pentru repararea țevilor, piscinelor, containerelor</strong>
+                  </div>
+                  <div class="swiper-slide__text5-3 swiper-slide__text5-3--2">
+                    <strong>Termorezistentă</strong>. Ține bine la –20 °C și +80 °C
+                  </div>
+                  <div class="swiper-slide__text5-3 swiper-slide__text5-3--3">
+                    <strong>Rezistă la presiune:</strong> cu cât presiunea e mai mare, cu atât adezivul se presează mai puternic.
+                  </div>
+                </div>
+      
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrap">
+                    <img src="img/slide5-4.webp" alt="slide">
+                  </div>
+                  <h4 class="swiper-slide__title4 title">
+                    <span>Elimină orice <br> scurgeri</span> într-o <br> clipă
+                  </h4>
+                </div>
+      
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrap">
+                    <img src="img/slide5-5.webp" alt="slide">
+                  </div>
+                </div>
+      
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__wrap">
+                    <img src="img/slide5-6.webp" alt="slide">
+                  </div>
+                  <div class="swiper-slide__item6 swiper-slide__item6--1">Lipire instant <br> sub apă</div>
+                  <div class="swiper-slide__item6 swiper-slide__item6--2">Bază din cauciuc <br> foarte flexibil și gros</div>
+                  <div class="swiper-slide__item6 swiper-slide__item6--3">Izolează simultan <br> apă, aer și umezeală</div>
+                  <div class="swiper-slide__item6 swiper-slide__item6--4">Funcționează pe <br> suprafețe fierbinți și reci</div>
+                </div>
+              </div>
+      
+              <!-- Săgeți navigare -->
+              <div class="main-swiper-button-prev" id="main-slider1-prev"></div>
+              <div class="main-swiper-button-next" id="main-slider1-next"></div>
+            </div>
+      
+            <!-- ===== BOTTOM ===== -->
+            <div class="popap__bottom">
+              <h3 class="popap__bottom-title">Flex Tape PVC</h3>
+      
+              <div class="popap__bottom-price">
+                <strong data-bonusprice="">29.99&nbsp;RON</strong>
+                <div class="popap__bottom-price-lb">-75%</div>
+                <s>129.99&nbsp;RON</s>
+              </div>
+      
+              <ul class="popap__bottom-list">
+                <li class="popap__bottom-list-item">
+                  ✊ Bandă ultra‑rezistentă care repară TOT
+                </li>
+              </ul>
+      
+              <div class="popap__btns">
+                <button type="button" class="btn btn--yes upsale-yes">
+                  <strong class="btn--yes-title">
+                    Adaugă la comandă <span>+29.99&nbsp;RON</span>
+                  </strong>
+                  <span class="btn--yes-subtitle">
+                    Livrăm împreună cu comanda curentă
+                  </span>
+                  <span class="btn__animation"></span>
+                </button>
+      
+                <a href="success/" class="btn btn--close upsale-no">
+                  Nu, mulțumesc, finalizează comanda mea
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="overlay"></div>
+    </main>
+  </div>
+
+  <script src="js/main1.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/popap-all.js"></script>
+  <script src="js/main.js"></script>
+  
+  <script src="js/custom.js"></script>
+
+  <link rel="stylesheet" href="css/sucess-block.css">
+  
+    <div class="finish-block">
+      <div style="padding:20px;display:inline-block;border-radius:12px">
+        <svg width="110" height="110" viewBox="0 0 110 110"
+          xmlns="http://www.w3.org/2000/svg" class="progress-anim is-playing">
+          <circle class="ring" cx="55" cy="55" r="35"/>
+          <path class="check" d="M37 55 L51 70 L74 40" pathLength="100"/>
+        </svg>
+      </div>
+      <h3 class="finish-block__title">Mulțumim, comanda <span class="order_num">#13452</span> a fost plasată!</h3>
+    </div>
+  
+      <!-- draft order load -->
+      <script src="https://cdn2.leadwyz.com/order.js"></script>
+  
+      <script>
+          
+          var m = ($('body').attr('class') || '').match(/\blang-([a-z]{2})\b/i);
+          var countryCode;
+          if (m) {
+            countryCode = m[1].toUpperCase();
+            localStorage.setItem('countryCode', countryCode);
+          } else {
+            localStorage.removeItem('countryCode'); // avoid stale value
+            alert('No "lang-xx" class found on <body>; countryCode not set.');
+          }
+  
+  
+      </script>
+      <!-- <script>
+          function initMap() {
+              const componentForm = Array.from(document.querySelectorAll('input[id$="-input"]'))
+                  .map(el => el.id.replace(/-input$/, ''));
+              const getInput = c => document.getElementById(c + '-input');
+  
+              const autocomplete = new google.maps.places.Autocomplete(getInput('location'), {
+                  fields: ["address_components"],
+                  types: ["address"],
+                  componentRestrictions: { country: countryCode.toLowerCase() }
+              });
+  
+              autocomplete.addListener('place_changed', () => {
+                  const place = autocomplete.getPlace();
+                  const get = t => {
+                  const comp = (place.address_components || []).find(c => (c.types || [])[0] === t);
+                  return comp ? ((t === 'street_number' || t === 'postal_code') ? comp.short_name : comp.long_name) : '';
+                  };
+  
+                  getInput('location').value = (get('street_number') + ' ' + get('route')).trim();
+                  componentForm.forEach(c => { if (c !== 'location') getInput(c).value = get(c); });
+  
+                  updateAddress();
+              });
+          }
+      </script>
+  
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDflyK201hikPl2R_fFcSMV3rY7vZP3Xo&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cAX" async defer></script> -->
+  
+         
+</body>
+</html>
+         

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ro" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SteelShift</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/popap.css">
+</head>
+
+<body class="lang-ro">
+
+  <script>
+    localStorage.clear();
+    const prod1 = "Clește SteelShift"; // Main Product name
+    const bonus1ID = 2153; // Bonus Product ID
+    const bonus1 = 'Flex Tape PVC'; // Bonus Product name
+    const bonus1qty = 1; // Bonus Product qty
+    // bonus1price is taken from the html attribute [data-bonusprice]            
+    const currency="RON"; // Currency symbol
+  </script>
+
+  <div class="wrapper">
+    <main class="main">
+      <section class="section1">
+        <div class="section1__banner">
+          <img src="img/icon2.webp" alt="icon">
+          <span>LIVRARE 1–3 ZILE</span>
+          <i></i>
+          <span>PLATĂ LA LIVRARE</span>
+          <img src="img/icon1.webp" alt="icon">
+        </div>
+        <img src="img/logo.webp" width="143" alt="SteelShift" class="section1__logo">
+        <div class="swiper section1__swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-1.webp" alt="slide" />
+                  </div>
+                  <div class="section1__slide-lb1"><img src="img/icon3.webp" alt="icon">Cel mai vândut</div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <video src="video/video.mp4" playsinline loop muted autoplay></video>
+                  </div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-3.webp" alt="slide" />
+                  </div>
+                  <p class="section1__slide-text3 section1__slide-text3--1">Tăiere oțel</p>
+                  <p class="section1__slide-text3 section1__slide-text3--2">Sertizare cleme</p>
+                  <p class="section1__slide-text3 section1__slide-text3--3">Decojire izolație</p>
+                  <p class="section1__slide-text3 section1__slide-text3--4">Strângerea piulițelor</p>
+                  <p class="section1__slide-text3 section1__slide-text3--5">Răsucirea firelor</p>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-4.webp" alt="slide" />
+                      <div class="section1__slide-block4 section1__slide-block4--1">
+                        <h3 class="section1__slide-block4-title">Oțel 3Cr13</h3>
+                        <p class="section1__slide-block4-text">Inoxidabil, rezistent la uzură, <br> imun la coroziune</p>
+                      </div>
+                      <div class="section1__slide-block4 section1__slide-block4--2">
+                        <h3 class="section1__slide-block4-title">Duritate HRC 60</h3>
+                        <p class="section1__slide-block4-text">Nu se deformează nici la presiune <br> mare, își păstrează muchia tăietoare</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-5.webp" alt="slide" />
+                  </div>
+                  <h3 class="section1__slide-title5 title">Decojire a izolației dintr-o mișcare, fără a atinge conductorul</h3>
+                  <p class="section1__slide-text5">Dezizolare curată, fără ciobituri sau tăieturi ⟶ scade riscul de rupere și supraîncălzire</p>
+                  <div class="section1__slide-lb5">
+                    <span>Ideal pentru conductori</span>
+                    <strong>de la 1 la 6 mm</strong>
+                  </div>
+              </div>
+              <div class="swiper-slide section1__slide">
+                  <div class="section1__slide-wrap">
+                      <img src="img/slide1-6.webp" alt="slide" />
+                  </div>
+                  <h3 class="section1__slide-title5 title">Din 2018 alături de <br> electricieni, constructori <br> și montatori</h3>
+                  <p class="section1__slide-text6 section1__slide-text6--1">unelte vândute în întreaga lume</p>
+                  <p class="section1__slide-text6 section1__slide-text6--2">pe baza a 5 850 de recenzii</p>
+              </div>
+          </div>
+          <div class="section1__swiper-pagination"></div>
+        </div>
+        <div class="section1__bottom">
+          <div class="section1__bottom-stars">Evaluare <strong>4,8</strong> pe baza <a href="#reviews">a 5 850 de recenzii</a></div>
+          <div class="section1__bottom-title title">Clește multifuncțional SteelShift</div>
+          <div class="section1__bottom-price">
+            <strong>99 Ron</strong>
+            <s>165 RON</s>
+            <div class="section1__bottom-price-lb">Reducere -40%</div>
+          </div>
+          <ul class="section1__bottom-list">
+            <li class="section1__bottom-list-item">Taie oțel cu grosime până la 5 mm</li>
+            <li class="section1__bottom-list-item">Potrivit pentru dezizolare și sertizarea clemelor</li>
+            <li class="section1__bottom-list-item">Înlocuiește 5 unelte — economisești spațiu și bani</li>
+            <li class="section1__bottom-list-item">Deschidere fălci până la 44 mm pentru piulițe și fitinguri</li>
+          </ul>
+        </div>
+      </section>
+      <form class="form" id="form">
+        <h3 class="title title--line"><span>Cumperi mai mult – plătești mai puțin</span></h3>
+        <div class="form__banner">
+          <h4 class="form__banner-title">Mega <strong>reduceri de sezon</strong></h4>
+          <div class="form__banner-lb"><span>cu reduceri până la -50%</span></div>
+        </div>
+        <div class="form__select">
+          <div class="form__select-item active" data-qty_invoice="1" data-add_comment="x1 - 99">
+            <div class="form__select-item-top">
+              <div class="form__select-img">
+                <img src="img/select-img1.webp" alt="img">
+              </div>
+              <div class="form__select-content">
+                <h5 class="form__select-title">1× Clește SteelShift</h5>
+                <div class="form__select-lb"><img src="img/icon5.webp" alt="icon"> Preț mic</div>
+              </div>
+              <div class="form__select-price">
+                <div class="form__select-price-top">
+                  <div class="form__select-price-top-lb">-40%</div>
+                  <div class="form__select-price-top-old">165 RON</div>
+                </div>
+                <div class="form__select-price-new"><span class="price-invoice">99</span> Ron</div>
+              </div>
+            </div>
+          </div>
+          <div class="form__select-item" data-qty_invoice="2" data-add_comment="x2 - 165">
+            <div class="form__select-item-top">
+              <div class="form__select-img">
+                <img src="img/select-img2.webp" alt="img">
+              </div>
+              <div class="form__select-content">
+                <h5 class="form__select-title">2× Clește SteelShift</h5>
+                <div class="form__select-lb form__select-lb--2"><img src="img/icon6.webp" alt="icon"> Cel mai vândut</div>
+              </div>
+              <div class="form__select-price">
+                <div class="form__select-price-top">
+                  <div class="form__select-price-top-lb">-50%</div>
+                  <div class="form__select-price-top-old">330 RON</div>
+                </div>
+                <div class="form__select-price-new"><span class="price-inoice">165</span> Ron</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="form__title2 title">Completează forma de comandă</h3>
+        <p class="form__subtitle2">un manager te va contacta în <strong>15 minute</strong>, <br> pentru a confirma și detalia comanda</p>
+        <div class="form__time"><span>Program: 9:00 – 20:00</span></div>
+        <div class="form__input-block-wrap">
+          <div class="form__input-block">
+            <div class="form__input-block-icon"><img src="img/int-1.svg" alt=""></div>
+            <input type="text" name="name" placeholder="Introduceți numele" autocomplete="off" required="">
+          </div>
+          <div class="form__input-block">
+            <div class="form__input-block-icon"><img src="img/int-2.svg" alt=""></div>
+            <input type="tel" name="phone" placeholder="Introduceți Nr. de telefon" autocomplete="off" required="" inputmode="text">
+          </div>
+          <div class="form__input-block">
+            <div class="form__input-block-icon"><img src="img/int-3.svg" alt=""></div>
+            <input type="email" name="email" placeholder="Adresa de email (opțional)">
+          </div>
+        </div>
+        <button type="submit" class="btn">
+          <img src="img/btn-icon.svg" alt="icon">
+          <span>Comandă Acum</span>
+          <span class="btn__animation"></span>
+        </button>
+        <p class="btn__after-text"><span>Disponibil doar online</span> | <span>Plată la livrare</span></p>
+      </form>
+      <section class="section2">
+        <div class="faq__accordion">
+          <div class="faq__accordion-item">
+            <div class="faq__accordion-button">
+              Descriere
+              <span class="faq__accordion-button-icon"></span>
+            </div>
+            <div class="faq__accordion-content">
+              <div class="faq__accordion-content-holder">
+                <img src="img/faq1.webp" alt="faq" style="margin-bottom: 10px;">
+                <p style="margin-bottom: 14px;">SteelShift 5-în-1 înseamnă puterea unui instrument industrial și precizia unuia de finețe, într-o singură unealtă. Oțel inoxidabil forjat 3Cr13 cu duritate HRC 60 taie cu ușurință oțel de până la 5 mm și își păstrează tăișul sezon după sezon.</p>
+                <p style="margin-bottom: 14px;">Taie, dezizolează, sertizează, răsucește, prinde — totul cu acest clește, fără să schimbi unealta.</p>
+                <p>Creat pentru cei care apreciază viteza, ordinea în trusă și siguranța că unealta nu te lasă — nici pe acoperiș, nici în atelier, nici în garaj.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__accordion-item">
+            <div class="faq__accordion-button">
+              Comandă și livrare
+              <span class="faq__accordion-button-icon"></span>
+            </div>
+            <div class="faq__accordion-content">
+              <div class="faq__accordion-content-holder">
+                <p style="margin-bottom: 14px;">Alege una dintre oferte, apoi plasează cererea pe site. După trimitere, te va contacta un operator pentru confirmare și pregătirea comenzii.</p>
+                <p>Livrare rapidă și sigură: curierul aduce comanda oriunde în România, direct la ușă, în 1–3 zile lucrătoare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="guarantee">
+        <div class="guarantee-img">
+          <img src="img/guarantee.webp" alt="guarantee">
+        </div>
+        <div class="guarantee-content">
+          <h4 class="guarantee-title">Garanție de retur 14 zile</h4>
+          <p class="guarantee-text">Dacă, din orice motiv, vrei să returnezi produsul în 14 zile de la cumpărare, îți rambursăm integral suma, fără întrebări.</p>
+        </div>
+      </div>
+      <section class="section3">
+        <h2 class="section3__title title"><span>Recenzii reale</span><br>despre cleștele SteelShift</h2>
+        <div class="section3__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-top">
+                <div class="section3__slide-ava">
+                  <img src="img/ava1.webp" alt="ava">
+                </div>
+                <div class="section3__slide-top-info">
+                  <div class="section3__slide-top-info-top">
+                    <strong class="section3__slide-top-info-name">Bogdan Stoica</strong>
+                    <span class="section3__slide-top-info-recomanda">recomandă <strong>SteelShift</strong></span>
+                  </div>
+                  <div class="section3__slide-top-info-bottom">1 săpt.</div>
+                </div>
+              </div>
+              <div class="section3__slide-comment">Am aflat de brandul ăsta de la un prieten. Foarte accesibile și de calitate.</div>
+              <div class="section3__slide-meta">
+                <div class="section3__slide-meta-reactions">12</div>
+                <div class="section3__slide-meta-comments">3 comentarii</div>
+              </div>
+              <div class="section3__slide-bottom">
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--1">Îmi place</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--2">Comentează</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--3">Distribuie</div>
+              </div>
+            </div>
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-top">
+                <div class="section3__slide-ava">
+                  <img src="img/ava2.webp" alt="ava">
+                </div>
+                <div class="section3__slide-top-info">
+                  <div class="section3__slide-top-info-top">
+                    <strong class="section3__slide-top-info-name">Stefan Marinescu</strong>
+                    <span class="section3__slide-top-info-recomanda">recomandă <strong>SteelShift</strong></span>
+                  </div>
+                  <div class="section3__slide-top-info-bottom">1 săpt.</div>
+                </div>
+              </div>
+              <div class="section3__slide-comment">Unghiul de ascuțire e perfect, taie șuruburi ca un clește de tăiat premium.</div>
+              <div class="section3__slide-meta">
+                <div class="section3__slide-meta-reactions">24</div>
+                <div class="section3__slide-meta-comments">13 comentarii</div>
+              </div>
+              <div class="section3__slide-bottom">
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--1">Îmi place</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--2">Comentează</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--3">Distribuie</div>
+              </div>
+            </div>
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-top">
+                <div class="section3__slide-ava">
+                  <img src="img/ava3.webp" alt="ava">
+                </div>
+                <div class="section3__slide-top-info">
+                  <div class="section3__slide-top-info-top">
+                    <strong class="section3__slide-top-info-name">Cristian Radu</strong>
+                    <span class="section3__slide-top-info-recomanda">recomandă <strong>SteelShift</strong></span>
+                  </div>
+                  <div class="section3__slide-top-info-bottom">1 săpt.</div>
+                </div>
+              </div>
+              <div class="section3__slide-comment">Răsucirea firelor e uniformă, prizele se montează de 2 ori mai repede.</div>
+              <div class="section3__slide-meta">
+                <div class="section3__slide-meta-reactions">16</div>
+                <div class="section3__slide-meta-comments">9 comentarii</div>
+              </div>
+              <div class="section3__slide-bottom">
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--1">Îmi place</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--2">Comentează</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--3">Distribuie</div>
+              </div>
+            </div>
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-top">
+                <div class="section3__slide-ava">
+                  <img src="img/ava4.webp" alt="ava">
+                </div>
+                <div class="section3__slide-top-info">
+                  <div class="section3__slide-top-info-top">
+                    <strong class="section3__slide-top-info-name">Florin Dumitrescu</strong>
+                    <span class="section3__slide-top-info-recomanda">recomandă <strong>SteelShift</strong></span>
+                  </div>
+                  <div class="section3__slide-top-info-bottom">2 săpt.</div>
+                </div>
+              </div>
+              <div class="section3__slide-comment">Echilibru excelent: nu sunt grele, dar se simt solide în mână.</div>
+              <div class="section3__slide-meta">
+                <div class="section3__slide-meta-reactions">67</div>
+                <div class="section3__slide-meta-comments">19 comentarii</div>
+              </div>
+              <div class="section3__slide-bottom">
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--1">Îmi place</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--2">Comentează</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--3">Distribuie</div>
+              </div>
+            </div>
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-top">
+                <div class="section3__slide-ava">
+                  <img src="img/ava5.webp" alt="ava">
+                </div>
+                <div class="section3__slide-top-info">
+                  <div class="section3__slide-top-info-top">
+                    <strong class="section3__slide-top-info-name">Mihai Ionescu</strong>
+                    <span class="section3__slide-top-info-recomanda">recomandă <strong>SteelShift</strong></span>
+                  </div>
+                  <div class="section3__slide-top-info-bottom">1 săpt.</div>
+                </div>
+              </div>
+              <div class="section3__slide-comment">Mânerele soft-touch nu alunecă nici cu mâinile umede la 35°C.</div>
+              <div class="section3__slide-meta">
+                <div class="section3__slide-meta-reactions">190</div>
+                <div class="section3__slide-meta-comments">32 comentarii</div>
+              </div>
+              <div class="section3__slide-bottom">
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--1">Îmi place</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--2">Comentează</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--3">Distribuie</div>
+              </div>
+            </div>
+            <div class="section3__slide swiper-slide">
+              <div class="section3__slide-top">
+                <div class="section3__slide-ava">
+                  <img src="img/ava6.webp" alt="ava">
+                </div>
+                <div class="section3__slide-top-info">
+                  <div class="section3__slide-top-info-top">
+                    <strong class="section3__slide-top-info-name">Andrei Popescu</strong>
+                    <span class="section3__slide-top-info-recomanda">recomandă <strong>SteelShift</strong></span>
+                  </div>
+                  <div class="section3__slide-top-info-bottom">2 săpt.</div>
+                </div>
+              </div>
+              <div class="section3__slide-comment">După trei luni de montaj CCTV, tăișul e la fel de agresiv.</div>
+              <div class="section3__slide-meta">
+                <div class="section3__slide-meta-reactions">35</div>
+                <div class="section3__slide-meta-comments">12 comentarii</div>
+              </div>
+              <div class="section3__slide-bottom">
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--1">Îmi place</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--2">Comentează</div>
+                <div class="section3__slide-bottom-item section3__slide-bottom-item--3">Distribuie</div>
+              </div>
+            </div>
+          </div>
+          <div class="section3__swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="section4">
+        <h2 class="section4__title title"><span>Testează cel mai puternic instrument 5-în-1.</span> cleștele de la  SteelShift!</h2>
+        <div class="section4__block">
+          <div class="section4__block-video">
+            <video src="video/video2.mp4" playsinline loop muted autoplay></video>
+          </div>
+          <div class="section4__block-list">
+            <div class="section4__block-list-item">
+              <img src="img/section4-icon1.svg" alt="icon">
+              <h3 class="section4__block-list-item-title">Tăiere puternică</h3>
+              <p class="section4__block-list-item-text">secționează metal de 5 mm fără efort</p>
+            </div>
+             <div class="section4__block-list-item">
+              <img src="img/section4-icon2.svg" alt="icon">
+              <h3 class="section4__block-list-item-title">Deschidere 44 mm</h3>
+              <p class="section4__block-list-item-text">desfiletează ușor piulițe și șuruburi „înțepenite”</p>
+            </div>
+             <div class="section4__block-list-item">
+              <img src="img/section4-icon3.svg" alt="icon">
+              <h3 class="section4__block-list-item-title">Dezizolare curată</h3>
+              <p class="section4__block-list-item-text">AWG 18-8 fără a răni conductorul, în câteva secunde</p>
+            </div>
+             <div class="section4__block-list-item">
+              <img src="img/section4-icon4.svg" alt="icon">
+              <h3 class="section4__block-list-item-title">Sertizare sigură</h3>
+              <p class="section4__block-list-item-text">papuci 2,5 / 4 / <br>  6 mm² țin impecabil</p>
+            </div>
+          </div>
+        </div>
+        <a href="#form" class="btn">
+          <img src="img/btn-icon.svg" alt="icon">
+          <span>Comandă Acum</span>
+          <span class="btn__animation"></span>
+        </a>
+        <p class="btn__after-text"><span>Disponibil doar online</span> | <span>Plată la livrare</span></p>
+      </section>
+      <section class="section5">
+        <h2 class="title"><span>TOP 5 motive să alegi SteelShift</span><br> în locul unui clește obișnuit <br>din primul magazin</h2>
+        <div class="section5__block">
+          <img src="img/section5-block.webp" alt="bg" class="section5__block-img">
+          <div class="section5__block-lb">Clește <br> obișnuit</div>
+          <div class="section5__block-lb2">5-în-1</div>
+          <div class="section5__block-items">
+            <div class="section5__block-item section5__block-item--1">
+              <div class="section5__block-item-text">5 funcții (tăiere, dezizolare, sertizare, prindere, răsucire)</div>
+              <div class="section5__block-item-text">Oțel 3Cr13 HRC 60 — nu se tocește și nu ruginește ani la rând</div>
+              <div class="section5__block-item-text">Ergo-SoftGrip: mânere antialunecare, chiar <br> și cu mănuși</div>
+              <div class="section5__block-item-text">Înlocuiește 5 unelte — economisești spațiu</div>
+              <div class="section5__block-item-text">Calitate americană</div>
+            </div>
+            <div class="section5__block-item section5__block-item--2">
+              <div class="section5__block-item-text">Doar tăiere + prindere; pentru restul îți trebuie unelte separate</div>
+              <div class="section5__block-item-text">Aliaj ieftin, se tocește rapid, apare coroziunea</div>
+              <div class="section5__block-item-text">Metal lucios/PVC <br> ieftin — mâna <br> alunecă</div>
+              <div class="section5__block-item-text">Cheltui pe stripper, crimpat, chei…</div>
+              <div class="section5__block-item-text">Preponderent China</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section6">
+        <h2 class="section6__title title"><span>Ce spun profesioniștii,</span><br> care lucrează cu clești <br> în fiecare zi</h2>
+        <div class="section6__swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide section6__slide">
+                <div class="section6__slide-img"><img src="img/section6-slide1.webp" alt="slide"></div>
+                <div class="section6__slide-content">
+                  <p class="section6__slide-text">„Pe șantier legăm armătură zilnic. După câteva săptămâni, cleștii obișnuiți capătă joc, iar aceștia țin deja a doua lună — tăișul e intact. Tai sârmă de 3 mm ca în unt, cu efort minim.”</p>
+                  <div class="section6__slide-name">Titu Teodorescu</div>
+                  <div class="section6__slide-info">brigadier-constructor (România, 14 ani experiență)</div>
+                </div>
+              </div>
+              <div class="swiper-slide section6__slide">
+                <div class="section6__slide-img"><img src="img/section6-slide2.webp" alt="slide"></div>
+                <div class="section6__slide-content">
+                  <p class="section6__slide-text">„Chiar înlocuiește alte unelte: e foarte comod să dezizolezi, să sertizezi sau să răsucești. Munca merge mult mai repede. Și cel mai important — sunt fiabile.”</p>
+                  <div class="section6__slide-name">Michał Lewicki</div>
+                  <div class="section6__slide-info">electrician instalații (Polonia, 9 ani experiență)</div>
+                </div>
+              </div>
+              <div class="swiper-slide section6__slide">
+                <div class="section6__slide-img"><img src="img/section6-slide3.webp" alt="slide"></div>
+                <div class="section6__slide-content">
+                  <p class="section6__slide-text">„Folosesc SteelShift ca să dezizolez, să sertizez papucul și să tai conductorul pe loc. Alerg mai puțin după alte unelte. Lucrul merge mai repede și nu m-a lăsat niciodată.”</p>
+                  <div class="section6__slide-name">Heinrich Maurer</div>
+                  <div class="section6__slide-info">tehnician CCTV (Germania, 5 ani experiență)</div>
+                </div>
+              </div>
+            </div>
+            <div class="section6__swiper-button-prev"></div>
+            <div class="section6__swiper-button-next"></div>
+          </div>
+          <div class="section6__swiper-pagination"></div>
+      </section>
+      <section class="section7">
+        <h2 class="section7__title title">Despre companie</h2>
+        <div class="section7__block">
+          <img src="img/section7-img.webp" alt="img">
+          <div class="section7__block-content">
+            <p class="section7__block-text"><strong>SteelShift</strong> — un brand american tânăr, dar deja recunoscut, care din 2018 produce unelte de mână profesionale.</p>
+            <p class="section7__block-text">Pornind de la câteva modele, am ajuns la peste 40 de produse: ciocane, fierăstraie, clești, rulete, nivele și multe altele.</p>
+            <p class="section7__block-text">În prezent, suntem prezenți în 34 de țări.</p>
+            <p class="section7__block-text"><span class="section7__block-text-bg">SteelShift creează unelte care rezistă și te ajută să lucrezi mai rapid</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="section11" id="reviews">
+        <h2 class="section11__title title"><span>Ce spun utilizatorii</span><br>despre cleștele SteelShift</h2>
+        <div class="section11__lb">
+          <strong>4,8</strong>
+          <img src="img/stars2.svg" alt="stars">
+          <span>5 850 de recenzii</span>
+        </div>
+        <p class="section11__subtitle"><strong>98%</strong> recomandă acest produs</p>
+        <div class="section11__bars">
+          <img src="img/section11-bars.webp" alt="bars">
+        </div>
+        <div class="swiper section11__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide1.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Unealta e ușoară, dar se simte solidă. Într-o tură urc pe acoperiș de șase ori — nu mai car în plus 700 g de scule.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Constantin Țicu</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide2.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Țin două perechi. Una acasă — una în mașină. M-au salvat pe drum: am scos borna bateriei, am dezizolat firul și am ajuns fără platformă.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Sergiu Andronic</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide3.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Cu acest clește tai cablu gros, dezizolez și sertizez papucul pe loc — economisesc timp și nu mai car geamantanul de scule.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Radu Tudor</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide4.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">Au căzut de pe schelă, de la 6 m, pe beton — doar o mică urmă. Articulația merge în continuare lin, fără agățări.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Nicu Vasile</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide section11__swiper-slide">
+              <div class="section11__swiper-slide-img">
+                <img src="img/slide5.webp" alt="slide">
+              </div>
+              <div class="section11__swiper-slide-content">
+                <p class="section11__swiper-slide-text">După câteva sute de tăieturi în sârmă de oțel, tăișul doar s-a matifiat, dar taie ca nou. Am verificat cu pila — duritatea e vizibil peste medie.</p>
+                <div class="section11__swiper-slide-info">
+                  <strong class="section11__swiper-slide-name">Ionel Munteanu</strong>
+                  <span class="section11__swiper-slide-verified">Cumpărător verificat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section11__swiper-button-prev"></div>
+          <div class="section11__swiper-button-next"></div>
+          <div class="section11__swiper-pagination"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div>
+          Expres Colet SRL, Iaşi, str. Aureliu Vlaicu 78 <br>
+          VAT: RO32088257 <br>
+          <a href="mailto:office.exprescolet@gmail.com">office.exprescolet@gmail.com</a>
+        </div>
+        <nav class="footer__nav">
+          <a target="_blank" href="billing-policy.html">Politica de facturare</a>
+          <a target="_blank" href="privacy-policy.html">Politica de Confidențialitate</a>
+          <a target="_blank" href="terms-of-service.html">Termeni și condiții</a>
+          <a target="_blank" href="return-policy.html">Politica de returnare</a>
+        </nav>
+      </footer>
+      <div class="sticky-block">
+        <div class="sticky-block__wrap">
+          <div class="sticky-block__content">
+            <div class="sticky-block__img">
+              <img src="img/sticky-block-img.webp" alt="img">
+            </div>
+            <div class="sticky-block__info">
+              <div class="sticky-block__text">Clește <strong>SteelShift</strong></div>
+              <div class="sticky-block__price">
+                <strong>99 Ron</strong>
+                <span>165 RON</span>
+              </div>
+            </div>
+          </div>
+          <a href="#form" class="btn"><span>Comandă<br> cu reducere</span></a>
+        </div>
+      </div>
+      <div class="popap" style="display: none;">
+          <div class="popap__close"><span>Închide</span></div>
+          <div class="popap-wrap">
+              <div class="popap__list">
+                  <li><i class="popap-ico-1"></i><span>Comandă</span></li>
+                  <li class="active"><b></b><i class="popap-ico-2"></i><span>Ofertă</span></li>
+                  <li class="next-li"><i class="popap-ico-3"></i><span>Confirmare</span></li>
+              </div>
+
+              <div class="popap__holder">
+                  <!-- ===== TOP ===== -->
+                  <div class="popap__top">
+                      <span class="popap__sub"> <span class="userName"> %Username%</span>, ofertă secretă!</span>
+                      <h3 class="popap__title">
+                        Adaugă la comandă banda pentru etanșarea fisurilor cu reducere -75%
+                      </h3>
+                  </div>
+
+                  <!-- ===== SLIDER ===== -->
+                  <div class="swiper main-swiper" id="main-slider1">
+                      <div class="swiper-wrapper">
+                          <!-- Слайд 1 -->
+                          <div class="swiper-slide">
+                              <div class="swiper-slide__wrap">
+                                  <div class="swiper-slide__lb1">Cel mai vândut</div>
+                                  <img src="img/slide5-1.webp" alt="slide" />
+                              </div>
+                          </div>
+
+                          <!-- Слайд 2 -->
+                          <div class="swiper-slide">
+                              <div class="swiper-slide__wrap">
+                                  <video src="video/video.mp4" playsinline loop muted autoplay></video>
+                              </div>
+                          </div>
+
+                          <!-- Слайд 3 -->
+                          <div class="swiper-slide">
+                              <div class="swiper-slide__wrap">
+                                  <img src="img/slide5-3.webp" alt="slide" />
+                                  <div class="bonus__swiper-slide-text3 bonus__swiper-slide-text3--1">
+                                      Potrivită <strong>pentru reparația <br> țevilor, piscinelor, <br> recipientelor</strong>
+                                  </div>
+                                  <div class="bonus__swiper-slide-text3 bonus__swiper-slide-text3--2">
+                                      <strong>Rezistentă la temperatură.</strong><br> Ține bine <br> la –20 °C și +80 °C
+                                  </div>
+                                  <div class="bonus__swiper-slide-text3 bonus__swiper-slide-text3--3">
+                                      <strong>Rezistă la presiune:</strong><br> cu cât debitul e mai mare, <br> cu atât adezivul <br> prinde mai tare.
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!-- Слайд 4 -->
+                          <div class="swiper-slide">
+                              <div class="swiper-slide__wrap">
+                                  <img src="img/slide5-4.webp" alt="slide" />
+                                  <h3 class="bonus__swiper-slide-title4 title">Elimină orice <br> scurgeri <span>într-o <br> clipă</span></h3>
+                              </div>
+                          </div>
+
+                          <!-- Слайд 5 -->
+                          <div class="swiper-slide">
+                              <div class="swiper-slide__wrap">
+                                  <img src="img/slide5-5.webp" alt="slide" />
+                                  <h3 class="bonus__swiper-slide-title5">Cum funcționează?</h3>
+                                  <div class="bonus__swiper-slide-lb5 bonus__swiper-slide-lb5--1">Înainte</div>
+                                  <div class="bonus__swiper-slide-lb5 bonus__swiper-slide-lb5--2">După</div>
+                                  <div class="bonus__swiper-slide-lb5 bonus__swiper-slide-lb5--3">Înainte</div>
+                                  <div class="bonus__swiper-slide-lb5 bonus__swiper-slide-lb5--4">După</div>
+                              </div>
+                          </div>
+
+                          <!-- Слайд 5 -->
+                          <div class="swiper-slide">
+                              <div class="swiper-slide__wrap">
+                                  <img src="img/slide5-6.webp" alt="slide" />
+                                  <div class="bonus__swiper-slide-text6 bonus__swiper-slide-text6--1">Aderență instant sub apă</div>
+                                  <div class="bonus__swiper-slide-text6 bonus__swiper-slide-text6--2">Bază din cauciuc groasă și foarte flexibilă</div>
+                                  <div class="bonus__swiper-slide-text6 bonus__swiper-slide-text6--3">Etanșează apa, aerul și umezeala simultan</div>
+                                  <div class="bonus__swiper-slide-text6 bonus__swiper-slide-text6--4">Funcționează pe suprafețe reci și fierbinți</div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Стрелки за навигация -->
+                      <div class="main-swiper-button-prev" id="main-slider1-prev"></div>
+                      <div class="main-swiper-button-next" id="main-slider1-next"></div>
+                  </div>
+
+                  <!-- ===== BOTTOM ===== -->
+                  <div class="popap__bottom">
+                      <h3 class="popap__bottom-title">Flex Tape PVC</h3>
+
+                      <div class="popap__bottom-price">
+                          <strong data-bonusprice="">69.99&nbsp;RON</strong>
+                          <div class="popap__bottom-price-lb">-75%</div>
+                          <s>279.99&nbsp;RON</s>
+                      </div>
+
+                      <ul class="popap__bottom-list">
+                          <li class="popap__bottom-list-item">
+                              ✊ Bandă ultra-rezistentă care repară TOT
+                          </li>
+                      </ul>
+
+                      <div class="popap__btns">
+                          <button type="button" class="btn btn--yes upsale-yes">
+                              <strong class="btn--yes-title"> Adaugă la comandă <span>+69.99&nbsp;RON</span> </strong>
+                              <span class="btn--yes-subtitle">
+                                  O livrăm împreună cu comanda curentă
+                              </span>
+                              <span class="btn__animation"></span>
+                          </button>
+
+                          <a href="success/" class="btn btn--close upsale-no">
+                              Nu, mulțumesc — finalizează comanda
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+	    <div class="overlay"></div>
+    </main>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main1.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/popap.js"></script>
+
+
+  <script src="js/custom.js"></script>
+
+  <link rel="stylesheet" href="css/sucess-block.css">
+  
+    <div class="finish-block">
+      <div style="padding:20px;display:inline-block;border-radius:12px">
+        <svg width="110" height="110" viewBox="0 0 110 110"
+          xmlns="http://www.w3.org/2000/svg" class="progress-anim is-playing">
+          <circle class="ring" cx="55" cy="55" r="35"/>
+          <path class="check" d="M37 55 L51 70 L74 40" pathLength="100"/>
+        </svg>
+      </div>
+      <h3 class="finish-block__title">Mulțumim, comanda <span class="order_num">#13452</span> a fost plasată!</h3>
+    </div>
+  
+      <!-- draft order load -->
+      <script src="https://cdn2.leadwyz.com/order.js"></script>
+  
+      <script>
+          
+          var m = ($('body').attr('class') || '').match(/\blang-([a-z]{2})\b/i);
+          var countryCode;
+          if (m) {
+            countryCode = m[1].toUpperCase();
+            localStorage.setItem('countryCode', countryCode);
+          } else {
+            localStorage.removeItem('countryCode'); // avoid stale value
+            alert('No "lang-xx" class found on <body>; countryCode not set.');
+          }
+  
+  
+      </script>
+      <!-- <script>
+          function initMap() {
+              const componentForm = Array.from(document.querySelectorAll('input[id$="-input"]'))
+                  .map(el => el.id.replace(/-input$/, ''));
+              const getInput = c => document.getElementById(c + '-input');
+  
+              const autocomplete = new google.maps.places.Autocomplete(getInput('location'), {
+                  fields: ["address_components"],
+                  types: ["address"],
+                  componentRestrictions: { country: countryCode.toLowerCase() }
+              });
+  
+              autocomplete.addListener('place_changed', () => {
+                  const place = autocomplete.getPlace();
+                  const get = t => {
+                  const comp = (place.address_components || []).find(c => (c.types || [])[0] === t);
+                  return comp ? ((t === 'street_number' || t === 'postal_code') ? comp.short_name : comp.long_name) : '';
+                  };
+  
+                  getInput('location').value = (get('street_number') + ' ' + get('route')).trim();
+                  componentForm.forEach(c => { if (c !== 'location') getInput(c).value = get(c); });
+  
+                  updateAddress();
+              });
+          }
+      </script>
+  
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDflyK201hikPl2R_fFcSMV3rY7vZP3Xo&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cAX" async defer></script> -->
+  
+         
+</body>
+</html>

@@ -1,0 +1,43 @@
+:host {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+:host(.active) {
+  display: block;
+}
+
+.order-confirmation-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+  margin-top: 20px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+
+  background: white;
+
+  border: 1px solid black;
+  border-radius: 12px;
+
+  visibility: visible;
+  position: relative;
+  z-index: 1000;
+}
+
+.order-confirmation-banner p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.order-number {
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+}

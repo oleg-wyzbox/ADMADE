@@ -1,0 +1,68 @@
+
+.finish-block {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #28BB71 0%, #40CD86 100%);
+    color: #fff;
+    padding: 37px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+  }
+  .finish-block.active {
+    display: flex;
+  }
+  .finish-block__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .progress-anim{
+    --dur: 2600ms;
+  
+    --circ: 220;
+    --sector-offset: 140;
+  
+    --t1: 0%;
+    --t2: 35%;
+    --t3: 66%;
+    --t4: 100%;
+  
+    --iter: 1;
+    --fill: both;
+    --ease: ease-in-out;
+  }
+  
+  .progress-anim .ring{
+    stroke:#fff; fill:none; stroke-width:6; stroke-linecap:round;
+    stroke-dasharray: var(--circ);
+    stroke-dashoffset: var(--circ);
+    animation: ring-draw var(--dur) var(--ease) var(--iter);
+    animation-fill-mode: var(--fill);
+  }
+  .progress-anim .check{
+    stroke:#fff; fill:none; stroke-width:6;
+    stroke-linecap:round; stroke-linejoin:round;
+    stroke-dasharray:100; stroke-dashoffset:100;
+    animation: check-draw var(--dur) var(--ease) var(--iter);
+    animation-fill-mode: var(--fill);
+  }
+  
+  @keyframes ring-draw{
+    0% { stroke-dashoffset: var(--circ); }
+    35% { stroke-dashoffset: var(--sector-offset); }
+    66% { stroke-dashoffset: 0; }
+    100%{ stroke-dashoffset: 0; }
+  }
+  @keyframes check-draw{
+    0%, 65% { stroke-dashoffset: 100; }
+    100%    { stroke-dashoffset: 0; }
+  }

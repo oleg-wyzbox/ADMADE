@@ -1,0 +1,26 @@
+.guarantee {
+    border: 1px solid #F8E6C5;
+    border-radius: 12px;
+    background-color: rgba(251, 230, 179, 0.57);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px 14px;
+    display: flex;
+    gap: 14px;
+    margin: 0 25px 35px 24px;
+}
+
+.guarantee-img {
+    flex: 0 0 84px;
+}
+
+.guarantee-title {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #2D1B13;
+    margin-bottom: 8px;
+}
+
+.guarantee-text {
+    color: #635846;
+}
