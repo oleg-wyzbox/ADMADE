@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin: -1px 0;
 }
 
 .image-text-overlay.rounded-t-4xl {
@@ -47,11 +48,11 @@
 }
 
 .image-text-overlay__title .title-yellow {
-  color: #ffad0d;
+  color: white !important;
 }
 
 .image-text-overlay__title .title-white {
-  color: white;
+  color: #ffad0d !important;
 }
 
 .bottom-image-4-title {

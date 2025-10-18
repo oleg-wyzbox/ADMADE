@@ -9,12 +9,15 @@ class OrderConfirmation extends HTMLElement {
   }
 
   render() {
+    // Generate timestamp for default order number
+    const timestamp = Date.now();
+
     this.shadowRoot.innerHTML = `
       <link href="./src/components/OrderConfirmation/OrderConfirmation.css" rel="stylesheet">
         
       <div class="order-confirmation-banner" id="order-confirmation-banner">
         <p>Спасибо за заказ! <br>
-          Ваш заказ № <span class="order-number" id="order-number">fs_loading...</span> принят и
+          Ваш заказ № <span class="order-number" id="order-number">fs_${timestamp}</span> принят и
           передан в обработку.
 
           В ближайшее время с вами свяжутся наши операторы по указанному номеру телефона для
@@ -24,11 +27,15 @@ class OrderConfirmation extends HTMLElement {
   }
 
   show(orderNumber = null) {
-    if (orderNumber) {
-      const orderNumberElement = this.shadowRoot.getElementById("order-number");
+    const orderNumberElement = this.shadowRoot.getElementById("order-number");
 
-      if (orderNumberElement) {
+    if (orderNumberElement) {
+      if (orderNumber) {
         orderNumberElement.textContent = orderNumber;
+      } else {
+        // Show fs_ with current timestamp in milliseconds
+        const timestamp = Date.now();
+        orderNumberElement.textContent = `fs_${timestamp}`;
       }
     }
 

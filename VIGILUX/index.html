@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="VIGILUX - мощный аккумуляторный фонарик 2в1 для туризма и активного отдыха. До 6 часов работы, быстрая зарядка USB Type-C, емкость 1200 mAh. Доставка 1-3 дня, оплата при получении."
@@ -108,6 +108,13 @@
   </head>
 
   <body class="lang-ru">
+    <script>
+      window.setAdConfig({
+        productName: "VIGILUX - Аккумуляторный сверхмощный фонарик 2в1",
+        currency: "RUB",
+      });
+    </script>
+
     <div class="wrapper">
       <main class="main">
         <!-- Hero Section -->
@@ -395,27 +402,7 @@
                 type="tel"
               />
             </div>
-            <div class="form__input-block">
-              <div class="form__input-block-icon">
-                <img alt="" src="src/assets/images/int-3.svg" />
-              </div>
-              <input
-                autocomplete="off"
-                name="email"
-                placeholder="Адрес электронной почты (необязательно)"
-                type="email"
-              />
-            </div>
           </div>
-
-          <input
-            type="checkbox"
-            name="quantity"
-            style="display: none"
-            hidden
-            checked
-          />
-
           <button id="submit-button" class="btn" type="submit">
             <img alt="icon" src="src/assets/images/btn-icon.svg" />
             <span>ЗАКАЗАТЬ СЕЙЧАС</span>
@@ -426,9 +413,9 @@
             <span>Оплата при получении</span>
           </p>
           <div class="mb-7"></div>
-        </form>
 
-        <order-confirmation></order-confirmation>
+          <order-confirmation></order-confirmation>
+        </form>
 
         <!-- FAQ Section -->
         <section class="section2">
@@ -841,9 +828,10 @@
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
+    <script src="https://cdn2.leadwyz.com/order.js" defer></script>
 
     <!-- Leadwyz Configuration -->
-    <script src="src/scripts/main.js" defer></script>
+    <script src="src/scripts/main1.js" defer></script>
 
     <!-- Custom Components -->
     <script
@@ -892,7 +880,7 @@
     ></script>
 
     <!-- Application Scripts -->
-    <script src="src/scripts/page-initializer.js" defer></script>
-    <script src="src/scripts/form-handler.js" defer></script>
+    <script src="src/scripts/main.js" defer></script>
+    <script src="src/scripts/custom.js" defer></script>
   </body>
 </html>
