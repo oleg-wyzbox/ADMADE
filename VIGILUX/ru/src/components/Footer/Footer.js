@@ -3,10 +3,10 @@ export class AppFooter extends HTMLElement {
     this.innerHTML = `
                 <footer class="footer">
                     <nav class="footer__nav">
-                        <a class="footer__nav-link" href="billing-policy.html">Политика выставления счетов</a>
-                        <a class="footer__nav-link" href="terms-of-service.html">Условия и положения</a>
-                        <a class="footer__nav-link" href="return-policy.html">Политика возврата</a>
-                        <a class="footer__nav-link" href="privacy-policy.html">Политика конфиденциальности</a>
+                        <a class="footer__nav-link" href="#" onclick="alert('Политика выставления счетов')">Политика выставления счетов</a>
+                        <a class="footer__nav-link" href="#" onclick="alert('Условия и положения')">Условия и положения</a>
+                        <a class="footer__nav-link" href="#" onclick="alert('Политика возврата')">Политика возврата</a>
+                        <a class="footer__nav-link" href="#" onclick="alert('Политика конфиденциальности')">Политика конфиденциальности</a>
                     </nav>
                      <div class="footer__contact">
                         <address>Expres Colet SRL, Iași, str. Aurel Vlaicu 78</address>
