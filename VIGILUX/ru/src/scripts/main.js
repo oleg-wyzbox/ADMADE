@@ -4,12 +4,11 @@
  */
 
 // Global variables required by Leadwyz (matching Acaro structure)
-var campaignID = "Z3QbAroXkLv0xlyP";
-var product = 2800;
+var campaignID = "8dEgrbo6rmo5AGWK";
+var product = 2803;
 var price = 99;
 var region = 1001;
 var quantity = 1;
-var cost = price * quantity;
 
 // Leadwyz script loader (exact same logic as Acaro)
 !(function (e, t, r) {

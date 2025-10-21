@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="ro">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -107,7 +107,7 @@
     />
   </head>
 
-  <body class="lang-ru">
+  <body class="lang-ro">
     <div class="wrapper">
       <main class="main">
         <!-- Hero Section -->
@@ -126,6 +126,13 @@
                     alt="slide"
                     src="src/assets/images/slide1-1-alternative.webp"
                   />
+                </div>
+                <div class="section1__slide-lb1">
+                  <img
+                    src="src/assets/images/icon3.webp"
+                    alt="icon"
+                    width="20"
+                  />Бестселлер
                 </div>
               </div>
 
@@ -427,8 +434,6 @@
           </p>
           <div class="mb-7"></div>
         </form>
-
-        <order-confirmation></order-confirmation>
 
         <!-- FAQ Section -->
         <section class="section2">
@@ -894,5 +899,39 @@
     <!-- Application Scripts -->
     <script src="src/scripts/page-initializer.js" defer></script>
     <script src="src/scripts/form-handler.js" defer></script>
+
+    <style>
+      .succes {
+        text-align: center;
+        padding: 30px 20px !important;
+        font-size: 18px;
+        line-height: 22px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        margin: 15px;
+        font-weight: 500;
+      }
+    </style>
+    <script>
+      $("form").submit(function (e) {
+        successMsgCheck();
+
+        function successMsgCheck(attempts = 0) {
+          const maxAttempts = 10;
+          if ($(".succes.succes_form").length) {
+            $("html, body").animate(
+              {
+                scrollTop: $("#post-order").offset().top,
+              },
+              1000
+            );
+          } else if (attempts < maxAttempts) {
+            setTimeout(function () {
+              successMsgCheck(attempts + 1);
+            }, 1000);
+          }
+        }
+      });
+    </script>
   </body>
 </html>

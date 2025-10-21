@@ -1292,17 +1292,15 @@ b {
 
 .section1__slide-lb1 {
   position: absolute;
-  left: 0;
-  bottom: 27px;
-  padding: 6px 14px 6px 12px;
+  top: 28px;
+  right: 0;
+  padding: 6px 14px 6px 4px;
   font-size: 20px;
   line-height: 23px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
-  background-color: #ff6b35;
-  border-radius: 0 4px 4px 0;
-  display: flex;
-  align-items: center;
+  background-color: #e63232;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .section1__slide-text3 {

@@ -89,32 +89,36 @@ class FormHandler {
   }
 
   sendComment() {
-    // Extract price and quantity like Acaro
-    price = parseInt($(".active .form__select-price-new").text());
-    const selectedQuantity =
-      $("[data-qty_invoice].active").data("qty_invoice") || 1;
+    // Get selected option
+    const selectedOption = $(".form__select-item.active");
+    const selectedQuantity = selectedOption.data("qty_invoice") || 1;
+
+    // Extract price from price-invoice span
+    const priceText = selectedOption.find(".price-invoice").text();
+    price = parseInt(priceText) || 89; // Fallback to 89 if parsing fails
 
     // Set quantity form field
     $("[name=quantity]").val(selectedQuantity);
 
-    // Calculate cost as price * quantity (VIGILUX specific)
-    cost = price * selectedQuantity;
     quantity = selectedQuantity;
 
-    // Set comment to activeOffers (same as Acaro)
+    // Set comment to activeOffers
     comment = this.activeOffers;
 
     // Set email from form field
     const email = $("[name=email]").val();
     if (email) {
-      $("[name=email]").val(email);
+      // Set the email to the global email variable for form submission
+      window.email = email;
     }
 
     console.log(
-      "Price:",
+      "Selected option:",
+      selectedQuantity === 1 ? "1x фонарик" : "2x фонарик",
+      "Price from DOM:",
+      priceText,
+      "Parsed price:",
       price,
-      "Cost:",
-      cost,
       "Quantity:",
       quantity,
       "Email:",
@@ -127,23 +131,39 @@ class FormHandler {
   setupFormSubmission() {
     $("form").on("submit", (e) => {
       e.preventDefault();
-      this.handleFormSubmission();
+
+      // Ensure email is captured before form submission
+      this.captureFormData();
     });
 
     // Add order status update like Acaro
     $("form").on("submit", () => {
       $(".order-status__lb").addClass("order-status__lb--active");
+      this.scrollToSuccessComponent();
     });
   }
 
-  handleFormSubmission() {
-    console.log("Form submitted!");
+  captureFormData() {
+    // Capture email from form
+    const email = $("[name=email]").val();
+    if (email) {
+      window.email = email;
+      console.log("Email captured for submission:", email);
+    }
 
-    // Hide the form immediately
-    this.hideForm();
+    // Capture phone if exists
+    const phone = $("[name=phone]").val();
+    if (phone) {
+      window.phone = phone;
+      console.log("Phone captured for submission:", phone);
+    }
 
-    // Show confirmation immediately
-    this.showConfirmation();
+    // Capture name if exists
+    const name = $("[name=name]").val();
+    if (name) {
+      window.name = name;
+      console.log("Name captured for submission:", name);
+    }
   }
 
   hideForm() {
@@ -151,28 +171,29 @@ class FormHandler {
     console.log("Form hidden");
   }
 
-  showConfirmation() {
-    const $confirmationComponent = document.querySelector("order-confirmation");
+  scrollToSuccessComponent() {
+    // Function to check for success component and scroll to it
+    const checkAndScrollToSuccess = (attempts = 0) => {
+      const maxAttempts = 10;
 
-    if (!$confirmationComponent) {
-      console.error("OrderConfirmation component not found!");
-      return;
-    }
+      if ($(".succes").length) {
+        const successElement = $(".succes").first();
+        $("html, body").animate(
+          {
+            scrollTop: successElement.offset().top - 50,
+          },
+          1000
+        );
+        console.log("Scrolled to success component");
+      } else if (attempts < maxAttempts) {
+        setTimeout(() => {
+          checkAndScrollToSuccess(attempts + 1);
+        }, 1000);
+      }
+    };
 
-    // Show the confirmation component immediately
-    $confirmationComponent.show(this.orderId);
-
-    // Scroll to confirmation immediately
-    this.scrollToConfirmation($confirmationComponent);
-  }
-
-  scrollToConfirmation(component) {
-    $("html, body").animate(
-      {
-        scrollTop: component.offsetTop - 50,
-      },
-      1000
-    );
+    // Start checking for the success component
+    checkAndScrollToSuccess();
   }
 }
 
